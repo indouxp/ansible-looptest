@@ -4,3 +4,5 @@
   command: ls -la chdir=/home/{{ user.name }}
   ignore_errors: True
   changed_when: False
+- name: debug
+  debug: msg="user.name={{ user.name }}"
