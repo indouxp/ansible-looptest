@@ -1,0 +1,6 @@
+---
+# REFERENCE: https://qiita.com/KeijiYONEDA/items/db258242c6cf9481d509
+- name: ユーザーディレクトリを確認
+  command: ls -la chdir=/home/{{ user.name }}
+  ignore_errors: True
+  changed_when: False

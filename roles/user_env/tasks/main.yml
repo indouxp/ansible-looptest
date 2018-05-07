@@ -1,0 +1,11 @@
+---
+# REFERENCE: https://qiita.com/KeijiYONEDA/items/db258242c6cf9481d509
+
+- name: ユーザーごとに一連の環境設定
+  include: user_env.yml
+  with_items:
+    - name: indou
+    - name: hitachi
+    - name: nginx
+  loop_control:
+    loop_var: user

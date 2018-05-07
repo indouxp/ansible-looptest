@@ -1,0 +1,7 @@
+---
+# REFERENCE: https://qiita.com/KeijiYONEDA/items/db258242c6cf9481d509
+
+- hosts: all
+  become: True
+  roles:
+    - user_env
